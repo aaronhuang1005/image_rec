@@ -25,11 +25,11 @@ cur.execute(cmd)
 username="test"
 cmd='INSERT INTO member values("'+ username +'","data/photo/'+username+'.jpg");'
 cur.execute(cmd)
-
+'''
 username="Aaron"
 cmd='DELETE from member where memberid ="'+username+'";'
 cur.execute(cmd)
-'''
+
 
 cmd='SELECT * FROM member;'
 cur.execute(cmd)

@@ -79,18 +79,29 @@ def dector_switch():
         else:
             detect.configure(text='''OFF''')
 
-print("--------------------------------------")
-print("> Loading Model...\n...\n")
+print("File_check-----------")
+print("> Loading Model...")
 predictor = dlib.shape_predictor(r"model/shape_predictor_68_face_landmarks.dat")
 detector = dlib.get_frontal_face_detector()
 print("> Complete.")
-print("--------------------------------------\n")
+print("---------------------\n")
 
-print("--------------------------------------")
-print("> Setting Camera...\n...\n")
-cap = cv2.VideoCapture(1)
-print("> Complete.")
-print("--------------------------------------\n")
+camera=None
+
+while True:
+    try:
+        print("Camera_check---------")
+        camera=int(input("> Enter the camera number:"))
+        print("> Setting Camera...")
+        cap = cv2.VideoCapture(camera)
+        print("> Complete.")
+        print("---------------------\n")
+        break
+    except:
+        camera=None
+        print("> Setting Camera error")
+        print("---------------------\n")
+
 
 mode=False
 out_text='''ON'''
