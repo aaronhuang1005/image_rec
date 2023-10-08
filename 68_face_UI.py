@@ -30,6 +30,7 @@ def out():
         videostream.configure(compound='center')
         videostream.configure(text='''Camera OFF''')
     root.update()
+    root.update_idletasks()
 
 def video_loop():
     global cap
