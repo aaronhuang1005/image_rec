@@ -107,7 +107,7 @@ cv2.destroyAllWindows()
 \
 這部分是想先測試攝像頭影像、臉部辨識以及視窗是否能正常運行，因此設計了以下的小視窗，可以顯示攝像頭畫面，辨識後的結果，並且可以開關上述的功能，如下圖：
 
-![demo](https://hackmd.io/_uploads/BJsaDKFy6.png)
+![demo]([https://hackmd.io/_uploads/BJsaDKFy6.png](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_c6e679593d92e617f83f638e99ec812e.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1706205810&Signature=mr4Gman3U0oJVkHTu7PMXa%2F%2FD5g%3D))
 
 \
 建立視窗其實照著教程做其實蠻簡單，建立視窗及設定特性：
